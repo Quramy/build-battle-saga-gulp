@@ -1,9 +1,9 @@
 meta:
-  url:
-  name: Web slide with fusuma and figma
+  url: https://quramy.github.io/build-battle-saga-gulp/
+  name: Introduction to Gulp
   author: quramy
-  thumbnail:
-  description: Web slide with fusuma and figma
+  thumbnail: https://raw.githubusercontent.com/Quramy/build-battle-saga-gulp/master/ogp.jpg
+  description: Let's enjoy writing gulpfile.js
   sns:
     - twitter
 slide:
