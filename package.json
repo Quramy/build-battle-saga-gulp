@@ -1,0 +1,20 @@
+{
+  "name": "fusuma-figma-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "fusuma start",
+    "build": "fusuma build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "@fusuma/task-live": "^1.4.0",
+    "fusuma": "^1.5.1",
+    "gh-pages": "^2.0.1",
+    "rimraf": "^2.6.3"
+  }
+}

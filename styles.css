@@ -1,0 +1,86 @@
+:root {
+  --gutter-large: 50px;
+  --fig-scale: .5;
+}
+
+body {
+  font-size: 32px;
+  background-color: #cf4647;
+  color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    --gutter-large: 20px;
+    --fig-scale: .18;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  pre[class*='language-'],
+  code[class*='language-'] {
+    font-size: 12px;
+  }
+
+  .chart_big {
+    display: none;
+  }
+}
+@media screen and (min-width: 751px) {
+  .chart_small {
+    display: none;
+  }
+}
+
+section:not(.current) iframe {
+  display: none;
+}
+
+section.slide > h2 + *:not([id]) {
+  margin-top: var(--gutter-large);
+}
+
+ul:not(:first-child) {
+  margin-top: var(--gutter-large);
+}
+
+ul:not(:last-child) {
+  margin-top: var(--gutter-large);
+}
+
+li > ul:not(:first-child) {
+  margin-top: 0;
+}
+
+ul>li {
+  line-height: 1.6;
+}
+
+blockquote {
+  margin-top: var(--gutter-large);
+}
+
+blockquote p {
+  font-size: 3.8rem;
+  line-height: 5rem;
+  font-style: italic;
+}
+
+li, p {
+  line-height: 4rem;
+}
+
+img {
+  max-height: 65vh;
+}
+
+.slide a[href] {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.slide a[href]:hover {
+  text-decoration: none;
+}

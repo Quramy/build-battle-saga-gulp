@@ -1,0 +1,24 @@
+meta:
+  url:
+  name: Web slide with fusuma and figma
+  author: quramy
+  thumbnail:
+  description: Web slide with fusuma and figma
+  sns:
+    - twitter
+slide:
+  loop: false
+  sidebar: true
+  targetBlank: true
+  showIndex: false
+  isVertical: false
+  code:
+    languages:
+      - javascript
+      - markup
+      - typescript
+    plugins: []
+    theme: okaidia
+extends:
+  js:
+  css: styles.css

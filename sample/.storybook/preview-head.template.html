@@ -1,0 +1,8 @@
+<script>
+var _resourcesPreloaded =
+  Promise.all(
+    [...document.querySelectorAll('link[rel="preload"]')].map(
+      link => new Promise(link.addEventListener.bind(link, 'load'))
+    )
+  )
+</script>

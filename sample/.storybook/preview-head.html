@@ -1,0 +1,9 @@
+<link rel="preload" as="image" href="/images/fuga.png">
+<script>
+var _resoucesPreloaded =
+  Promise.all(
+    [...document.querySelectorAll('link[rel="preload"]')].map(
+      link => new Promise(link.addEventListener.bind(link, 'load'))
+    )
+  )
+</script>
