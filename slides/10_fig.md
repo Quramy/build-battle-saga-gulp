@@ -406,7 +406,7 @@ function injectPreload({ template, outName, prefix = '' }) {
       if (err) return cb(err)
       this.push(new File({
         path: outName,
-        contents: new Buffer.from(links.join('\n') + '\n' + content),
+        contents: Buffer.from(links.join('\n') + '\n' + content),
       }))
       cb()
     })
