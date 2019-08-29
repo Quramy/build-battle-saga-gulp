@@ -149,7 +149,7 @@ function hogePlugin() {
   function transform(file, encoding, cb) {
     if (!file.isBuffer()) return cb(null, file)
     const contentsStr = file.contents.toString()
-    file.contents = new Buffer(/* contentsStrをゴニョる */)
+    file.contents = Buffer.from(/* contentsStrをゴニョる */)
     this.push(file)
     cb()
   }
@@ -158,7 +158,8 @@ function hogePlugin() {
 }
 ```
 
-細かいこと考えなきゃ↑で十分
+Gulp pluginは実体ただのtransferable stream  
+vinylに生えてる値も大したことないので、 細かいこと考えなきゃ↑で十分  
 
 ---
 
